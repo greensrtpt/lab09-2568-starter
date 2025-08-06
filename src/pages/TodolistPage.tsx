@@ -45,6 +45,8 @@ function App() {
     setTasks(newTasks);
   };
 
+   const doneSize = tasks.filter((task) => task.isDone).length;
+
   return (
     <div className="col-12 m-2 p-0">
       <div className="container text-center">
